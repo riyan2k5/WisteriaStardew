@@ -1,0 +1,12 @@
+{
+    "Name": "Wisteria Tree",
+    "Author": "You",
+    "Version": "1.0.0",
+    "Description": "Adds a gorgeous Wisteria tree to Pierre's shop.",
+    "UniqueID": "YourName.WisteriaTree",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+  }

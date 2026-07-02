@@ -1,0 +1,54 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Tree",
+      "FromFile": "assets/tree.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Sapling",
+      "FromFile": "assets/sapling.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "Name": "Wisteria Sapling",
+          "DisplayName": "Wisteria Sapling",
+          "Description": "Plant this to grow a beautiful Wisteria tree.",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 50,
+          "Texture": "Mods/WisteriaTree/Sapling",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FruitTrees",
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "Texture": "Mods/WisteriaTree/Tree",
+          "Seasons": ["spring", "summer"],
+          "Fruit": []
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "SeedShop", "Items" ],
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "Id": "Custom_WisteriaSapling",
+          "ItemId": "Custom_WisteriaSapling",
+          "Price": 50
+        }
+      }
+    }
+  ]
+}
