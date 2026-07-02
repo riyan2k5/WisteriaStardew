@@ -1,9 +1,9 @@
 {
-    "Name": "Wisteria Tree",
-    "Author": "You",
+    "Name": "Wisteria Tree Mod",
+    "Author": "Riyan",
     "Version": "1.0.0",
-    "Description": "Adds a gorgeous Wisteria tree to Pierre's shop.",
-    "UniqueID": "YourName.WisteriaTree",
+    "Description": "Adds a Wisteria tree sapling to Pierre's shop.",
+    "UniqueID": "Riyan.WisteriaTreMod",
     "MinimumApiVersion": "4.0.0",
     "UpdateKeys": [],
     "ContentPackFor": {

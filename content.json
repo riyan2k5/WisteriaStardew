@@ -18,10 +18,10 @@
         "Custom_WisteriaSapling": {
           "Name": "Wisteria Sapling",
           "DisplayName": "Wisteria Sapling",
-          "Description": "Plant this to grow a beautiful Wisteria tree.",
+          "Description": "Plant this to grow a Wisteria tree on your farm.",
           "Type": "Basic",
           "Category": -74,
-          "Price": 50,
+          "Price": 1000,
           "Texture": "Mods/WisteriaTree/Sapling",
           "SpriteIndex": 0
         }
@@ -46,7 +46,7 @@
         "Custom_WisteriaSapling": {
           "Id": "Custom_WisteriaSapling",
           "ItemId": "Custom_WisteriaSapling",
-          "Price": 50
+          "Price": 1000
         }
       }
     }
