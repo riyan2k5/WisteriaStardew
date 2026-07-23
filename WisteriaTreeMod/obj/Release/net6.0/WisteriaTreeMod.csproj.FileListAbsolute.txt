@@ -1,0 +1,8 @@
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/bin/Release/net6.0/WisteriaTreeMod.deps.json
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/bin/Release/net6.0/WisteriaTreeMod.dll
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.csproj.AssemblyReference.cache
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.GeneratedMSBuildEditorConfig.editorconfig
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.AssemblyInfoInputs.cache
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.AssemblyInfo.cs
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.csproj.CoreCompileInputs.cache
+/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/obj/Release/net6.0/WisteriaTreeMod.dll

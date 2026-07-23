@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sftu30abMHstcvhjXW9Gi/BPIUhpy6Q9EH4DA5hcamLZ8PYfwg7ji0bgfxFFlTUAfwavm3bumRjmJC5UpX1T6Q==",
+  "success": true,
+  "projectFilePath": "/Users/riyan/Desktop/WisteriaStardew/WisteriaTreeMod/WisteriaTreeMod.csproj",
+  "expectedPackageFiles": [
+    "/Users/riyan/.nuget/packages/pathoschild.stardew.modbuildconfig/4.4.0/pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,12 +1,12 @@
 {
-    "Name": "Wisteria Tree Mod",
-    "Author": "Riyan",
-    "Version": "1.0.0",
-    "Description": "Adds a Wisteria tree sapling to Pierre's shop.",
-    "UniqueID": "Riyan.WisteriaTreMod",
-    "MinimumApiVersion": "4.0.0",
-    "UpdateKeys": [],
-    "ContentPackFor": {
-      "UniqueID": "Pathoschild.ContentPatcher"
-    }
+  "Name": "Wisteria Tree Mod",
+  "Author": "Riyan",
+  "Version": "1.0.0",
+  "Description": "Adds a Wisteria tree sapling to Pierre's shop.",
+  "UniqueID": "Riyan.WisteriaTreMod",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
   }
+}

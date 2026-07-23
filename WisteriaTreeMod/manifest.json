@@ -1,0 +1,19 @@
+{
+  "Name": "Wisteria Tree Behavior",
+  "Author": "Riyan",
+  "Version": "1.0.0",
+  "Description": "Companion mod for Wisteria Tree Mod",
+  "UniqueID": "Riyan.WisteriaTreeMod",
+  "MinimumApiVersion": "4.0.0",
+  "EntryDll": "WisteriaTreeMod.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "Riyan.WisteriaTreMod",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}
