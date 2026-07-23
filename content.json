@@ -1,0 +1,147 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    // ── Load Textures ──────────────────────────────────────────────
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Tree",
+      "FromFile": "assets/tree.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Sapling",
+      "FromFile": "assets/sapling.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Flower",
+      "FromFile": "assets/wisteria_flower.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/WisteriaTree/Tea",
+      "FromFile": "assets/wisteria_tea.png"
+    },
+    // ── Register Objects ───────────────────────────────────────────
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "Name": "Custom_WisteriaSapling",
+          "DisplayName": "Wisteria Sapling",
+          "Description": "Plant this to grow a Wisteria tree on your farm.",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 1000,
+          "Texture": "Mods/WisteriaTree/Sapling",
+          "SpriteIndex": 0
+        },
+        "Custom_WisteriaFlower": {
+          "Name": "Custom_WisteriaFlower",
+          "DisplayName": "Wisteria",
+          "Description": "A delicate purple blossom from a Wisteria tree. It has a sweet, calming fragrance.",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 120,
+          "Edibility": 10,
+          "Texture": "Mods/WisteriaTree/Flower",
+          "SpriteIndex": 0
+        },
+        "Custom_WisteriaTea": {
+          "Name": "Custom_WisteriaTea",
+          "DisplayName": "Wisteria Tea",
+          "Description": "A soothing tea brewed from Wisteria flowers. Its gentle aroma eases the mind.",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 350,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Texture": "Mods/WisteriaTree/Tea",
+          "SpriteIndex": 0,
+          "Buffs": [
+            {
+              "Id": "Custom_WisteriaTeaBuff",
+              "Duration": 600,
+              "BuffId": "Custom_WisteriaTeaBuff",
+              "CustomAttributes": {
+                "MaxStamina": 40,
+                "LuckLevel": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    // ── Fruit Tree Data (produces 1 flower/day in spring & summer) ─
+    {
+      "Action": "EditData",
+      "Target": "Data/FruitTrees",
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "DisplayName": "Wisteria Tree",
+          "Texture": "Mods/WisteriaTree/Tree",
+          "Seasons": [
+            "spring",
+            "summer"
+          ],
+          "Fruit": [
+            {
+              "Id": "Custom_WisteriaFlower",
+              "ItemId": "Custom_WisteriaFlower",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 1
+            }
+          ]
+        }
+      }
+    },
+    // ── Add Keg recipe: Wisteria Flower → Wisteria Tea ─────────────
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)12",
+        "OutputRules"
+      ],
+      "Entries": {
+        "Custom_WisteriaFlowerToTea": {
+          "Id": "Custom_WisteriaFlowerToTea",
+          "Triggers": [
+            {
+              "Id": "Custom_WisteriaFlowerToTea_Trigger",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O)Custom_WisteriaFlower",
+              "RequiredCount": 1
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "Custom_WisteriaTeaOutput",
+              "ItemId": "(O)Custom_WisteriaTea",
+              "MinStack": 1
+            }
+          ],
+          "MinutesUntilReady": 180
+        }
+      }
+    },
+    // ── Pierre's Shop ──────────────────────────────────────────────
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Custom_WisteriaSapling": {
+          "Id": "Custom_WisteriaSapling",
+          "ItemId": "Custom_WisteriaSapling",
+          "Price": 1000
+        }
+      }
+    }
+  ]
+}
